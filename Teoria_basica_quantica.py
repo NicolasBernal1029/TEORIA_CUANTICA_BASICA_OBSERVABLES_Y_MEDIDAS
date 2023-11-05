@@ -1,4 +1,4 @@
-
+import numpy as np
 
 class Particle:
     def __init__(self, n, ket, ket_evolve):

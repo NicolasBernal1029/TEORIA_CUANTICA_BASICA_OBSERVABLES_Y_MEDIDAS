@@ -6,6 +6,26 @@ BasicQuantumTheory.py: este archivo contiene la clase Particle que se utiliza pa
 
 test.py: este archivo contiene los casos de prueba para la clase Particle.
 
+## Notas Importantes
+Asegúrate de que los estados cuánticos de entrada estén adecuadamente normalizados (la suma de los cuadrados absolutos debe ser igual a 1).
+Al utilizar mean_and_variance y eigenvalues_and_probabilities, asegúrate de proporcionar operadores observables hermíticos.
+Siéntete libre de modificar y expandir la clase para adaptarla a tus necesidades específicas de simulación cuántica.
+
+Define tu partícula cuántica creando una instancia de la clase Particle. Debes proporcionar los siguientes parámetros:
+
+n: Dimensión del estado cuántico.
+ket: El vector de estado cuántico (ket) con el que deseas trabajar.
+ket_evolve: El ket inicial para la evolución.
+
+Utiliza los métodos disponibles para analizar y simular el comportamiento cuántico:
+
+probability(posición): Calcula la probabilidad de encontrar la partícula en una posición específica.
+transition_probability(otra): Calcula la probabilidad de transición entre dos estados cuánticos.
+transition_amplitude(otra): Calcula la amplitud de transición entre dos estados cuánticos.
+mean_and_variance(observable): Calcula la media y la varianza de un operador observable.
+eigenvalues_and_probabilities(observable): Calcula los eigenvalores, eigenvectores y sus probabilidades correspondientes para un operador observable.
+evolve(lista_U): Realiza la evolución cuántica de la partícula utilizando una lista de operadores unitarios.
+
 ## Requisitos
 Python 3.x
 numpy
